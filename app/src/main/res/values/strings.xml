@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Kama</string>
+    <string name="app_show_content">Life\'s adornment, home\'s warmth</string>
+    <string name="app_skip">Skip</string>
+    <string name="app_start">Start</string>
+    <string name="app_favourite">Favourite</string>
+    <string name="app_show_content3">Home\'s heart, cherished memories</string>
+    <string name="app_sign_in_google">Sign in with google</string>
+    <string name="app_home">Home</string>
+    <string name="app_profile">Profile</string>
+    <string name="app_about_us">About Us</string>
+    <string name="app_setting">Settings</string>
+    <string name="app_policy">Privacy Policy</string>
+    <string name="app_terms">Terms of Service</string>
+    <string name="app_log_out">Log Out</string>
+    <string name="app_description">Description</string>
+    <string name="app_empty">Go and add your favorite furniture</string>
+
+    <string name="app_liked">%s Liked</string>
+    <string name="app_seen">%s Seen</string>
+    <string name="app_add_follow">Add to wishlist</string>
+
+    <string name="app_welcome">Welcome.</string>
+    <string name="app_discount">Discount</string>
+    <string name="app_popular">Popular</string>
+    <string name="app_most_interested">Most Interested</string>
+
+    <array name="app_show_array">
+        <item>Life\'s adornment, home\'s warmth</item>
+        <item>Emotions kept, memories made</item>
+        <item>Home\'s heart, cherished memories</item>
+    </array>
+
+    <integer-array name="app_show_icon" >
+        <item>@drawable/show1</item>
+        <item>@drawable/show2</item>
+        <item>@drawable/show3</item>
+      <!--  <item>@mipmap/about</item>-->
+    </integer-array>
+
+
+
+</resources>
