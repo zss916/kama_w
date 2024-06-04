@@ -5,6 +5,7 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -28,7 +29,7 @@ import com.kama.kama.util.cdp
 
 
 @Composable
-fun CommonItemButton(@DrawableRes iconId: Int, @StringRes strId: Int, onClick: () -> Unit){
+fun CommonItemButton(@DrawableRes iconId: Int?  = null, @StringRes strId: Int? = null, onClick: () -> Unit = {}){
 
     TextButton(
         contentPadding = PaddingValues(0.cdp),
@@ -47,7 +48,7 @@ fun CommonItemButton(@DrawableRes iconId: Int, @StringRes strId: Int, onClick: (
             verticalAlignment = Alignment.CenterVertically,
         ) {
 
-            Image(
+           if(iconId!=null) Image(
                 painter = painterResource(id = iconId),
                 modifier = Modifier
                     .padding(end = 12.cdp, start = 10.cdp)
@@ -55,7 +56,7 @@ fun CommonItemButton(@DrawableRes iconId: Int, @StringRes strId: Int, onClick: (
                     .padding(end = 0.cdp),
                 contentDescription =null)
 
-            Text(
+           if(strId != null) Text(
                 text = stringResource(id = strId),
                 modifier = Modifier.padding(top = 10.cdp, bottom = 10.cdp),
                 color = Color.Black,

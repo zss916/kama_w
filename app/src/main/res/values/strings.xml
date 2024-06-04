@@ -2,6 +2,8 @@
     <string name="app_name">Kama</string>
     <string name="app_show_content">Life\'s adornment, home\'s warmth</string>
     <string name="app_skip">Skip</string>
+    <string name="app_sure">Sure</string>
+    <string name="app_cancel">Cancel</string>
     <string name="app_start">Start</string>
     <string name="app_favourite">Favourite</string>
     <string name="app_show_content3">Home\'s heart, cherished memories</string>
@@ -14,6 +16,7 @@
     <string name="app_terms">Terms of Service</string>
     <string name="app_log_out">Log Out</string>
     <string name="app_description">Description</string>
+    <string name="app_delete_account">Cancel Account</string>
     <string name="app_empty">Go and add your favorite furniture</string>
 
     <string name="app_liked">%s Liked</string>
@@ -24,6 +27,12 @@
     <string name="app_discount">Discount</string>
     <string name="app_popular">Popular</string>
     <string name="app_most_interested">Most Interested</string>
+
+    <string name="app_delete_account_title">Are you sure you want to delete your account?</string>
+    <string name="app_delete_account_content1">Please note that this action will permanently delete your data after a 7-day waiting period, and it cannot be recovered.</string>
+    <string name="app_delete_account_content2">If you log in to this account again during the waiting period, the deactivation will be canceled.</string>
+
+
 
     <array name="app_show_array">
         <item>Life\'s adornment, home\'s warmth</item>
