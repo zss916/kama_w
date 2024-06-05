@@ -34,10 +34,10 @@ import com.kama.kama.core.nav.ARoute
 import com.kama.kama.core.nav.RouterKV
 import com.kama.kama.core.nav.RouterUrls
 import com.kama.kama.ui.page.about.view.AboutView
-import com.kama.kama.ui.page.about.view.BaseAppBar
 import com.kama.kama.ui.page.about.view.TextItemButton
 import com.kama.kama.ui.page.favourite.FavouriteVM
 import com.kama.kama.ui.page.profile.view.CommonItemButton
+import com.kama.kama.ui.page.setting.view.BaseAppBar
 import com.kama.kama.ui.page.setting.view.BottomSheetDialog
 import com.kama.kama.ui.page.setting.view.DialogContent
 import com.kama.kama.util.cdp
@@ -49,7 +49,7 @@ fun SettingPage(vm: SettingVM = SettingVM()) {
         Modifier.fillMaxSize(),
         containerColor= Color(0xFFF9F9F9),
         contentColor = Color(0xFFF9F9F9),
-        topBar = { BaseAppBar(strId = R.string.app_setting) }
+        topBar = { BaseAppBar(strId = R.string.app_setting, isShowTest = true) }
     ){ padding -> ContentView(padding = padding,vm = vm) }
 }
 

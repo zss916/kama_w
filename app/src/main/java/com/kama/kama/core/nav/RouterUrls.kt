@@ -10,4 +10,6 @@ object RouterUrls {
     const val WEB = "web"
     const val SETTING = "setting"
     const val DETAIL = "detail"
+    const val EDIT_PROFILE = "edit_profile"
+    const val TEST = "test"
 }

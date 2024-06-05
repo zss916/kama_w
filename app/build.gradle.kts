@@ -132,4 +132,14 @@ dependencies {
 
     //gson
     //implementation("com.google.code.gson:gson:2.10")
+
+    //SplashScreen
+    //implementation("androidx.core:core-splashscreen:1.1.0-rc01")
+
+    //foundation
+    //implementation("androidx.compose.foundation:foundation:1.6.7")
+
+    ///icons-extended
+    implementation("androidx.compose.material:material-icons-extended")
+
 }

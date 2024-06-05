@@ -20,11 +20,13 @@ import com.kama.kama.core.KamaApplication
 import com.kama.kama.model.HomeData
 import com.kama.kama.ui.page.about.AboutPage
 import com.kama.kama.ui.page.detail.DetailPage
+import com.kama.kama.ui.page.edit.EditProfilePage
 import com.kama.kama.ui.page.login.LoginPage
 import com.kama.kama.ui.page.main.MainPage
 import com.kama.kama.ui.page.setting.SettingPage
 import com.kama.kama.ui.page.show.ShowPage
 import com.kama.kama.ui.page.splash.SplashPage
+import com.kama.kama.ui.page.test.TestPage
 import com.kama.kama.ui.page.web.WebPage
 
 
@@ -46,6 +48,10 @@ fun NCNavGraph(
         navController = navController,
         startDestination = startDestination
     ) {
+        composable(RouterUrls.TEST) {
+            //Log.d("tag","splash page")
+            TestPage()
+        }
         composable(RouterUrls.SPLASH) {
             Log.d("tag","splash page")
             SplashPage()
@@ -76,6 +82,9 @@ fun NCNavGraph(
                KamaApplication.context.getString(R.string.app_policy) -> WebPage(title = title,url = AppConfig.APP_POLICY)
                KamaApplication.context.getString(R.string.app_terms) -> WebPage(title = title,url = AppConfig.APP_TERMS)
             }
+        }
+        composable(RouterUrls.EDIT_PROFILE) {
+            EditProfilePage()
         }
 
 

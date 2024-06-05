@@ -48,5 +48,6 @@
     </integer-array>
 
 
+    <string name="app_test">Test Page</string>
 
 </resources>

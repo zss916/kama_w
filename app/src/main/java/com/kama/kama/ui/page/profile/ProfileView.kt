@@ -11,6 +11,10 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -29,6 +33,8 @@ import com.kama.kama.util.cdp
 @Composable
 fun ProfileView() {
     val context = LocalContext.current
+    var show by remember { mutableStateOf(false) }
+
 
     Column(
         modifier = Modifier
@@ -63,9 +69,9 @@ fun ProfileView() {
 
         Spacer(modifier = Modifier.padding(top = 20.cdp))
 
-        /*CommonItemButton(iconId = R.mipmap.user, strId = R.string.app_profile){
-
-        }*/
+        CommonItemButton(iconId = R.mipmap.user, strId = R.string.app_profile){
+            ARoute.instance.navigate(RouterUrls.EDIT_PROFILE)
+        }
 
         CommonItemButton(iconId = R.mipmap.about, strId = R.string.app_about_us){
             //AboutActivity.start(context)
