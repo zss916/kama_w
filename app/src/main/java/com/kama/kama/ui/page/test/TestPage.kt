@@ -41,7 +41,7 @@ import com.kama.kama.ui.page.test.view.HorizontalPagerExample
 import com.kama.kama.ui.page.test.view.VerticalPagerExample
 
 @Composable
-fun TestPage() {
+fun TestPage( onClick: (() -> Unit)? = null) {
 
     Scaffold (
         Modifier.fillMaxSize(),

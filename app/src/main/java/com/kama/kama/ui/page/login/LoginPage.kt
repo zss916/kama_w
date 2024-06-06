@@ -108,7 +108,7 @@ fun LoginPage() {
         }
 
 
-        /*TextButton(
+        TextButton(
             contentPadding = PaddingValues(0.cdp),
             modifier = Modifier
                 .padding(start = 5.cdp, end = 5.cdp, bottom = 10.cdp)
@@ -117,6 +117,8 @@ fun LoginPage() {
                 .background(color = Color.White,shape = RoundedCornerShape(14.cdp)),
             onClick = {
                 Log.d("tag", "TextButton Google Sign in ")
+                ARoute.instance.popBackStack()
+                ARoute.instance.navigate(RouterUrls.MAIN)
                 //ARoute.instance.navigate(RouterUrls.WEB)
             }) {
 
@@ -141,12 +143,7 @@ fun LoginPage() {
                     fontWeight = FontWeight.W900,
                     textAlign = TextAlign.Center)
             }
-        }*/
-
-
-
-
-
+        }
 
     }
 }
