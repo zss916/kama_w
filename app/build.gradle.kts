@@ -147,6 +147,6 @@ dependencies {
 
 
     // 系统UI控制库，实现沉浸式状态栏
-    //implementation("com.google.accompanist:accompanist-systemuicontroller:0.31.0-alpha")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.31.0-alpha")
 
 }
