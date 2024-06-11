@@ -49,7 +49,7 @@ fun SettingPage(vm: SettingVM = SettingVM()) {
         Modifier.fillMaxSize(),
         containerColor= Color(0xFFF9F9F9),
         contentColor = Color(0xFFF9F9F9),
-        topBar = { BaseAppBar(strId = R.string.app_setting, isShowTest = true) }
+        topBar = { BaseAppBar(strId = R.string.app_setting, isShowTest = false) }
     ){ padding -> ContentView(padding = padding,vm = vm) }
 }
 

@@ -35,7 +35,6 @@ fun ProfileView() {
     val context = LocalContext.current
     var show by remember { mutableStateOf(false) }
 
-
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -69,9 +68,9 @@ fun ProfileView() {
 
         Spacer(modifier = Modifier.padding(top = 20.cdp))
 
-        CommonItemButton(iconId = R.mipmap.user, strId = R.string.app_profile){
+        /*CommonItemButton(iconId = R.mipmap.user, strId = R.string.app_profile){
             ARoute.instance.navigate(RouterUrls.EDIT_PROFILE)
-        }
+        }*/
 
         CommonItemButton(iconId = R.mipmap.about, strId = R.string.app_about_us){
             //AboutActivity.start(context)

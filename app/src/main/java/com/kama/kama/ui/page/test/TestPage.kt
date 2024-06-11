@@ -36,8 +36,15 @@ import com.kama.kama.util.cdp
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.pager.*
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.withStyle
 import com.kama.kama.ui.page.test.view.Filters
 import com.kama.kama.ui.page.test.view.HorizontalPagerExample
+import com.kama.kama.ui.page.test.view.LinearGradientText
+import com.kama.kama.ui.page.test.view.MultipleStylesInText
 import com.kama.kama.ui.page.test.view.VerticalPagerExample
 
 @Composable
@@ -58,12 +65,26 @@ fun ContentView(padding: PaddingValues) {
 
    // HorizontalPagerExample()
    // VerticalPagerExample()
-    Filters()
+   // Filters()
 
     //TextField(value = , onValueChange = )
 
+    Column(modifier = Modifier.fillMaxSize().padding(padding)) {
+
+        Spacer(modifier = Modifier.height(100.dp))
+
+        MultipleStylesInText()
+
+        Spacer(modifier = Modifier.height(50.dp))
+
+        LinearGradientText()
+    }
+
 
 }
+
+
+
 
 
 

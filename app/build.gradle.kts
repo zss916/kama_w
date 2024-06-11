@@ -14,7 +14,7 @@ android {
         applicationId = "com.kama.kama"
         minSdk = 24
         targetSdk = 33
-        versionCode = 1
+        versionCode = 2
         versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -88,7 +88,10 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
+    ///目前是m3主题
     implementation(libs.androidx.material3)
+    //可以切换m2 主题
+    //implementation "androidx.compose.material:material:$m2-version"
     implementation(libs.androidx.paging.common.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -141,5 +144,9 @@ dependencies {
 
     ///icons-extended
     implementation("androidx.compose.material:material-icons-extended")
+
+
+    // 系统UI控制库，实现沉浸式状态栏
+    //implementation("com.google.accompanist:accompanist-systemuicontroller:0.31.0-alpha")
 
 }

@@ -35,6 +35,8 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Text
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.SideEffect
 import androidx.navigation.compose.rememberNavController
 //import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import com.kama.kama.core.nav.NCNavGraph
@@ -59,6 +61,8 @@ class MainActivity : ComponentActivity() {
         }
         setContent {
             val navCtr = rememberNavController()
+
+
             Surface(
                 modifier = Modifier
                     .fillMaxSize()
@@ -71,6 +75,11 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+
+
+
+
+
 }
 
 

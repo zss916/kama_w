@@ -80,6 +80,8 @@ fun HomeView(vm: HomeVM = HomeVM()) {
         .fillMaxSize()
         .statusBarsPadding()) {
 
+       
+
         item {
             HomeTopTitle()
         }

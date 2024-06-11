@@ -49,5 +49,12 @@
 
 
     <string name="app_test">Test Page</string>
+    <string name="app_nick_name">Nick Name</string>
+    <string name="app_gender">Gender</string>
+    <string name="app_birthdate">Birthdate</string>
 
+    <string name="app_select_date">Select date</string>
+    <string name="app_year">year</string>
+    <string name="app_month">month</string>
+    <string name="app_day">day</string>
 </resources>
