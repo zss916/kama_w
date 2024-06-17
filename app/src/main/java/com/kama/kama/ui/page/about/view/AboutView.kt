@@ -73,7 +73,6 @@ fun AboutView(padding: PaddingValues) {
 
         TextItemButton(strId = R.string.app_terms){
             val title = KamaApplication.context.getString(R.string.app_terms)
-            d
             ARoute.instance.navigate("${RouterUrls.WEB}/${title}")
         }
 
