@@ -58,7 +58,7 @@ fun AboutView(padding: PaddingValues) {
         Spacer(modifier = Modifier.padding(top = 5.cdp))
 
         Text(
-            text = "version:1.0.0",
+            text = "version:1.0.2",
             fontWeight = FontWeight.Bold,
             fontSize = 18.sp,
             color = Color(0xFFA0A0A0))

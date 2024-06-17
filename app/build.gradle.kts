@@ -14,8 +14,8 @@ android {
         applicationId = "com.kama.kama"
         minSdk = 24
         targetSdk = 33
-        versionCode = 2
-        versionName = "1.0.1"
+        versionCode = 3
+        versionName = "1.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -149,4 +149,8 @@ dependencies {
     // 系统UI控制库，实现沉浸式状态栏
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.31.0-alpha")
 
+
+    implementation("com.android.installreferrer:installreferrer:2.2")
+
+    implementation("com.google.android.gms:play-services-ads-identifier:18.0.1")
 }
